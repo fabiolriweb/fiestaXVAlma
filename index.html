@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mis XV de Alma</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0;}
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            color: #4a3a3a;
+            text-align: center;
+            background-color: #fdf3f7;  
+            position: relative; 
+}
+body::before  { 
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("portadafloral.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 450px;
+
+    opacity: 0.12;          
+    z-index: -1;
+    pointer-events: none;
+}
+        /* Portada CORREGIDA */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+                        url('alma-portada.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            color: white;
+            padding: 20px;
+        }
+
+        .monograma {
+            font-size: clamp(30px, 5vw, 40px);
+            margin-bottom: 20px;
+        }
+
+        .frase {
+            font-size: clamp(1em, 3vw, 1.3em);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(2.5em, 7vw, 4em);
+            margin: 10px 0;
+        }
+
+        .fecha {
+            font-size: clamp(1.1em, 3vw, 1.4em);
+        }
+
+        .seccion {
+            padding: 60px 20px;
+        }
+
+        .tarjeta {
+            max-width: 850px;
+            margin: auto;
+            background: rgba(255,255,255,.95);
+            backdrop-filter: blur(3px);
+            padding: 40px 25px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,.10);
+        }
+
+        h2 {
+            color: #c79b3b;
+            margin: 30px 0 15px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #d4af37;
+            color: white;
+            padding: 15px 28px;
+            text-decoration: none;
+            border-radius: 40px;
+            margin: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        #contador {
+            font-size: clamp(1.5em, 5vw, 2em);
+            color: #d4af37;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* 🆕 Estilo para las fotos inferiores */
+        .galeria {
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 18px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            max-height:450px;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(199,155,59,0.2);
+            border: 3px solid #f7d9e4;
+        }
+
+        footer {
+            background: rgba(247,217,228,.75);
+            backdrop-filter: blur(4px);
+            padding:30px;
+            color:#7b5b5b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="overlay">
+        <div class="monograma">👑 Alma</div>
+        <div class="frase">Una noche mágica está por comenzar</div>
+        <h1>Los XV de Alma</h1>
+        <div class="fecha">10 · 09 · 26 — 20:30 hs</div>
+    </div>
+</header>
+
+<section class="seccion">
+    <div class="tarjeta">
+        <h2>✨ Estás invitado ✨</h2>
+        <p>Hay momentos inolvidables que permanecen para siempre en el corazón. <p>
+        <p> Hoy quiero compartir contigo uno de los más especiales de mi vida.</p>
+
+        <h2>📍 Te espero en</h2>
+        <p><b>Star Recepciones</b></p>
+        <p> el 10 de septiembre de 2026</p>
+        <p> desde las 20:30 hs</p>
+        <a class="boton" href="https://maps.app.goo.gl/Nk3jnLj1DmRLYM8R7" target="_blank">Ver ubicación</a>
+
+        <h2>⏳ Cuenta regresiva</h2>
+        <div id="contador"></div>
+
+        <h2>✨ Dress Code</h2>
+        <p><b>Sport elegant</b></p>
+        <p>Viste lo que te haga brillar</p>
+
+        <h2>🎁 Regalos</h2>
+        <p>Tu presencia será mi mejor regalo.<br>Pero si además deseas obsequiarme algo, agradeceré tu cariño a través de una contribución <br>para mis sueños y proyectos futuros. <br>Datos para transferencia.</p>
+        <p><b>Banco:</b> Sudameris</p>
+        <p><b>Titular:</b> María Fabiola Riveros</p>
+        <p><b>Alias:</b> 2505225</p>
+
+        <h2>💌 Confirmación</h2>
+        <a class="boton" href="https://wa.me/595983713463" target="_blank">Confirmar asistencia</a>
+    </div>
+</section>
+
+<!-- 🆕 Sección de fotos -->
+<section>
+    <h2 style="text-align:center; color:#c79b3b; margin-bottom:25px;">Brilla desde tu alma ✨</h2>
+    <div class="galeria">
+              <img src="Fotoxv8.jpg" alt="Alma">
+    </div>
+</section>
+
+<footer>
+    Gracias por acompañarme en una noche tan especial 💖
+</footer>
+
+<script>
+    var fechaEvento = new Date("Sep 10, 2026 20:30:00").getTime();
+
+    setInterval(function(){
+        var ahora = new Date().getTime();
+        var distancia = fechaEvento - ahora;
+
+        if (distancia < 0) {
+            document.getElementById("contador").innerHTML = "¡La fiesta ya comenzó! 🎉";
+            return;
+        }
+
+        var dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        var horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        var segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        document.getElementById("contador").innerHTML = dias + " días • " + horas + " h • " + minutos + " m • " + segundos + " s";
+    }, 1000);
+</script>
+
+</body>
+</html>
