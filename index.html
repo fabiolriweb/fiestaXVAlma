@@ -25,40 +25,46 @@ header{
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.78)),
     url('Fotoportadaok.png');
     background-size:cover;
-    background-position:58% 15%;
+    background-position:65% center;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .overlay{
-    padding:20px 12px;
-    transform: translateX(0px);
+    padding:20px;
+    max-width:700px;
+    width:100%;
+    margin:auto;
 }
     
 @media (max-width:768px){
+
+    header{
+        background-position:72% center;
+        min-height:100svh;
+ }
+    
     .overlay{
-        transform: translateX(15px);
-         }
+       padding:20px;
+        width:100%;
+        margin:auto;
+        transform:none;
+    }
+
+    h1{
+        font-size:2.8rem;
 }
 .monograma{
-    font-size:70px;
-    font-weight:900;
-    letter-spacing:10px;
+    font-size:48px;
+    letter-spacing:6px;
     color:#d4af37;
 }
 
 .frase{
-    margin-top:10px;
-    font-size:1.2em;
-    color:#d0d0d0;
-    letter-spacing:2px;
-}
+    front-size:0.95em;
+  }
 
-h1{
-    font-size: clamp(3em,8vw,6em);
-    margin-top:25px;
-    letter-spacing:4px;
 }
 
 .fecha{
